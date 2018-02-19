@@ -1,0 +1,9 @@
+<?xml  version="1.0"?>
+<project  default="exe">
+    <target name="comp">
+        <javac destdir="." srcdir="."/>
+    </target>
+    <target name="exe"  depends="comp">
+        <java classpath="." classname="hell" />
+    </target>
+</project>
